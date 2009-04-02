@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+     xmlns:songbird="http://www.songbirdnest.com/2007/addon-metadata-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{ef5aadbd-12e0-8e48-8607-425d2d546fe3}</em:id>
+    <em:type>2</em:type>
+    <em:name>lastfmSidebar</em:name>
+    <em:version>1.3.0</em:version>
+    <em:creator>Steven Bengtson</em:creator>
+    <em:description>A sidebar to see your Last.FM profile.</em:description>
+    <em:targetApplication>
+      <Description>
+        <em:id>songbird@songbirdnest.com</em:id>
+        <em:minVersion>0.8.0pre</em:minVersion>
+        <em:maxVersion>1.1.0pre</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Register a pane to be displayed below the service sidebar.
+         See http://songbirdnest.com/add-on-api/articles/display-panes -->
+    <songbird:displayPane>
+      <Description>
+        <songbird:contentTitle>lastfmSidebar</songbird:contentTitle>
+        <songbird:contentUrl>chrome://lastfmsidebar/content/pane.xul</songbird:contentUrl>
+        <songbird:contentIcon>chrome://lastfmsidebar/skin/pane-icon.png</songbird:contentIcon>
+        <songbird:defaultWidth>200</songbird:defaultWidth>
+        <songbird:defaultHeight>100</songbird:defaultHeight>
+        <songbird:suggestedContentGroups>sidebar</songbird:suggestedContentGroups>
+        <songbird:showOnInstall>true</songbird:showOnInstall>
+      </Description>
+    </songbird:displayPane>
+
+    <em:requires>
+       <Description>
+         <em:id>audioscrobbler@songbirdnest.com</em:id>
+         <em:minVersion>0.3.0.752</em:minVersion>
+         <em:maxVersion>0.3.4.0</em:maxVersion>
+       </Description>
+     </em:requires>
+
+  </Description>
+</RDF>
