@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <prefwindow id="BrowserPreferences">
+    <prefpane
+      id="library_lastfmsidebar_pref_pane"
+      label="Last.FM Sidebar"
+      image="chrome://lastfmsidebar/skin/pane-icon.png">
+
+      <preferences id="lastfmsidebarPrefs">
+        <preference id="songbird.lastfmsidebar.maxrecent"
+                    name="songbird.lastfmsidebar.maxrecent"
+                    type="string"/>
+        <preference id="songbird.lastfmsidebar.refreshrate"
+                    name="songbird.lastfmsidebar.refreshrate"
+                    type="string"/>
+        <preference id="songbird.lastfmsidebar.showimages"
+                    name="songbird.lastfmsidebar.showimages"
+                    type="string"/>
+      </preferences>
+
+      <vbox>
+        <groupbox>
+          <caption label="Last.FM Sidebar"/>
+          
+          <grid id="albumartmaanagerGeneralGrid">
+            <columns>
+              <column flex="1"/>
+              <column/>
+            </columns>
+            <rows id="lastfmsidebar-general-rows">
+              <row id="lastfmsidebar-refreshrate">
+                  <label control="lastfmsidebar-refreshrate-input" value="Refresh Rate:"/>
+                  <textbox flex="1" id="lastfmsidebar-refreshrate-input"
+                           preference="songbird.lastfmsidebar.refreshrate"
+                           tooltiptext="Input number of milliseconds until next refresh"/>
+              </row>
+              <row id="lastfmsidebar-maxrecent">
+                  <label control="lastfmsidebar-maxrecent-input" value="Max Recent Entries:"/>
+                  <textbox flex="1" id="lastfmsidebar-maxrecent-input"
+                           preference="songbird.lastfmsidebar.maxrecent"
+                           tooltiptext="Input the number of recent entries to display"/>
+              </row>
+              <row id="lastfmsidebar-showimages">
+                <vbox align="start">
+                  <checkbox id="lastfmsidebar-showimages-input"
+                            label="Show Images"
+                            onsyncfrompreference="return (Application.prefs.getValue('songbird.lastfmsidebar.showimages', '0') == '0');"
+                            onsynctopreference="return (document.getElementById('lastfmsidebar-showimages-input').getAttribute('checked') ? '0' : '1');"
+                            preference="songbird.lastfmsidebar.showimages"/>
+                </vbox>
+              </row>
+            </rows>
+          </grid>
+        </groupbox>
+
+      </vbox>
+    </prefpane>
+  </prefwindow>
+</overlay>
