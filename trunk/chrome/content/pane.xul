@@ -6,14 +6,9 @@
 <?xml-stylesheet href="chrome://lastfm/skin/overlay.css" ?>
 <?xml-stylesheet href="chrome://lastfmsidebar/skin/pane.css" type="text/css"?>
 
-<!DOCTYPE page [
-<!ENTITY % lastfmDTD SYSTEM "chrome://lastfm/locale/overlay.dtd">
-<!ENTITY % lastfmSidebarDTD SYSTEM "chrome://lastfmsidebar/locale/overlay.dtd">
-%lastfmDTD;
-%lastfmSidebarDTD;
-]>
+<!DOCTYPE page SYSTEM "chrome://lastfm/locale/overlay.dtd">
 
-<page id="lastfmsidebar-pane" title="&lastfmsidebar.pane.label;"
+<page id="lastfmsidebar-pane" title="Last.fm Sidebar"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
          xmlns:svg="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink"
