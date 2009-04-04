@@ -1,0 +1,79 @@
+
+#toolbar-refresh {
+}
+
+#toolbar-busy {
+  padding-right: 4px;
+}
+
+trackinfo {
+  -moz-binding: url("chrome://lastfmsidebar/content/trackInfo.xml#trackinfo");
+}
+
+.trackinfo {
+ -moz-box-flex: 1;
+}
+
+.trackinfo-outter {
+  -moz-box-flex: 1;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+}
+
+.trackinfo-inner {
+  -moz-box-flex: 1;
+}
+
+.trackinfo-labelbox {
+  -moz-box-flex: 1;
+  margin: 0px;
+  padding: 0px;
+}
+
+.trackinfo-image {
+  min-width: 34px;
+  min-height: 34px;
+  max-width: 34px;
+  max-height: 34px;
+}
+.trackinfo-image:hover {
+  cursor: pointer;
+}
+
+.trackinfo-trackname {
+  margin: 2px;
+  padding: 0px;
+  font-weight: bold;
+  font-size: 10px;
+  -moz-box-flex: 1;
+}
+.trackinfo-trackname:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.eqimage {
+  max-width: 12px;
+  max-height: 12px;
+}
+
+.trackinfo-artistname {
+  margin: 2px;
+  padding: 0px;
+  font-weight: normal;
+  font-size: 10px;
+  -moz-box-flex: 1;
+}
+.trackinfo-artistname:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.trackinfo-playtime {
+  text-align: right;
+  margin: 2px;
+  padding: 0px;
+  font-weight: normal;
+  font-size: 10px;
+}
+

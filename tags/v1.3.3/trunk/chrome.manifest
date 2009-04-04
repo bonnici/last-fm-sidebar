@@ -1,0 +1,5 @@
+content lastfmsidebar  chrome/content/
+locale  lastfmsidebar  en-US  chrome/locale/en-US/
+skin    lastfmsidebar  classic/1.0 chrome/skin/
+
+overlay chrome://browser/content/preferences/preferences.xul chrome://lastfmsidebar/content/overlayPrefs.xul
