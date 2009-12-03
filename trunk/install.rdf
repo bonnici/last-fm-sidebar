@@ -5,14 +5,14 @@
     <em:id>{ef5aadbd-12e0-8e48-8607-425d2d546fe3}</em:id>
     <em:type>2</em:type>
     <em:name>lastfmSidebar</em:name>
-    <em:version>1.3.8</em:version>
+    <em:version>1.3.9</em:version>
     <em:creator>Steven "Stevo" Bengtson</em:creator>
     <em:description>A sidebar to see your Last.FM profile.</em:description>
     <em:targetApplication>
       <Description>
         <em:id>songbird@songbirdnest.com</em:id>
         <em:minVersion>1.1.1</em:minVersion>
-        <em:maxVersion>1.3.*</em:maxVersion>
+        <em:maxVersion>1.4.*</em:maxVersion>
       </Description>
     </em:targetApplication>
     
