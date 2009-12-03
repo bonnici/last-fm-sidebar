@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE bindings PUBLIC "-//MOZILLA//DTD XBL V1.0//EN" "http://www.mozilla.org/xbl">
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="trackinfo">
+    <content>
+      <xul:hbox class="trackinfo-outter">
+        <xul:image xbl:inherits="src=albumImage,collapsed=albumHide,tooltiptext=albumName"
+                   class="trackinfo-image"
+                   onclick="Lastfmsidebar.PaneController.loadLink('albumImage', document.getBindingParent(this), event);"/>
+        <xul:vbox class="trackinfo-labelbox">
+          <xul:hbox class="trackinfo-inner">
+            <xul:label xbl:inherits="value=trackName,tooltiptext=trackName"
+                       class="trackinfo-trackname"
+                       crop="end"
+                       onclick="Lastfmsidebar.PaneController.loadLink('trackName', document.getBindingParent(this), event);"
+                       flex="1"/>
+            <xul:image src="chrome://lastfmsidebar/skin/icon_eq.gif" class="eqimage" xbl:inherits="collapsed=hidePlaying"/>
+          </xul:hbox>
+          <xul:hbox class="trackinfo-inner">
+            <xul:label xbl:inherits="value=artistName,tooltiptext=artistName"
+                       class="trackinfo-artistname"
+                       crop="end"
+                       onclick="Lastfmsidebar.PaneController.loadLink('artistName', document.getBindingParent(this), event);"
+                       felx="1"/>
+            <xul:label xbl:inherits="value=playTime" class="trackinfo-playtime" />
+          </xul:hbox>
+        </xul:vbox>
+      </xul:hbox>
+    </content>
+    
+    <implementation>
+    </implementation>
+    
+    <handlers>
+    </handlers>
+  </binding>
+
+</bindings>
