@@ -1,0 +1,1 @@
+Allows you to view your profile in a display pane, this is best used in the right sidebar display pane.
